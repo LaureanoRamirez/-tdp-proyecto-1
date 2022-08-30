@@ -2,23 +2,24 @@ package gui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
 import javax.swing.border.EmptyBorder;
 
 import entities.Student;
-import javax.swing.JTabbedPane;
 
-@SuppressWarnings("serial")
-public class SimplePresentationScreen extends JFrame {
+public class PresentationScreen extends JFrame {
+
 
 	private JPanel contentPane;
 	private JPanel tabInformation;
 	private JTabbedPane tabbedPane;
 	private Student studentData;
 
-	public SimplePresentationScreen(Student studentData) {
+	public PresentationScreen(Student studentData) {
 		this.studentData = studentData;
 		
 		contentPane = new JPanel();
