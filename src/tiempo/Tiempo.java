@@ -9,7 +9,7 @@ public class Tiempo {
     public Tiempo() {
 	Calendar calendario = new GregorianCalendar();
 	String anio= Integer.toString(calendario.get(Calendar.YEAR));
-	String mes= Integer.toString(calendario.get(Calendar.MONTH));
+	String mes= Integer.toString(calendario.get(Calendar.MONTH)+1);
 	String dia= Integer.toString(calendario.get(Calendar.DATE));
 	
 	String fechaActual= anio+"/"+mes+"/"+dia;
